@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judo - Tréninky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background-color: #2a5298;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #1e3c72;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem 3rem 2rem;
+        }
+        .content {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 0.5rem;
+        }
+        .content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .video-container iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        ul.content-list {
+            margin: 1rem 0 1rem 2rem;
+        }
+        ul.content-list li {
+            margin-bottom: 0.5rem;
+        }
+        .training-box {
+            background-color: #f1f8e9;
+            padding: 1.5rem;
+            border-left: 5px solid #2a5298;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tréninky juda</h1>
+        <p>Struktura a metody přípravy</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="historie.html">Historie</a></li>
+            <li><a href="techniky.html">Techniky</a></li>
+            <li><a href="treninky.html">Tréninky</a></li>
+            <li><a href="souteze.html">Soutěže</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Struktura tréninku</h2>
+            
+            <p>Typický judistický trénink začíná řádným pozdravem a rozcvičením, které připraví tělo na náročnou fyzickou aktivitu. Rozcvičení zahrnuje běh, protažení, dynamické cviky a specifické pohyby pro judo jako jsou ukemi neboli pády. Začátečníci tráví většinu času učením se základních technik a bezpečných pádů, zatímco pokročilí judisté se zaměřují na zdokonalování konkrétních pohybů. Po rozcvičení následuje technická část, kde instruktor učí nové techniky nebo zlepšuje provedení známých hodů. Každá technika se opakuje mnohokrát s různými partnery, aby si cvičenci vypěstovali svalovou paměť a automatické reflexy.</p>
+            
+            <p>Důležitou součástí každého tréninku je uchikomi, což je opakované nácvik vstupu do hodu bez dokončení samotného hodu. Toto cvičení rozvíjí rychlost, načasování a správnou mechaniku pohybu bez nadměrné únavy partnera. Nage-komi je pak plný nácvik hodů, kde judista opakovaně hází svého partnera na tatami. Po technické části následuje randori neboli volný sparing, kde judisté aplikují naučené techniky v realistických podmínkách. Randori rozvíjí taktické myšlení, schopnost improvizovat a odolnost vůči stresu a vyčerpání.</p>
+            
+            <div class="training-box">
+                <h3>Základní komponenty tréninku</h3>
+                <ul class="content-list">
+                    <li>Rozcvičení a příprava těla na zátěž</li>
+                    <li>Ukemi - nácvik bezpečných pádů a kotoulů</li>
+                    <li>Uchikomi - opakovaný nácvik vstupů do technik</li>
+                    <li>Nage-komi - plný nácvik hodů s partnerem</li>
+                    <li>Randori - volný sparing s různými partnery</li>
+                    <li>Katame-waza - přízemní technika a boj na zemi</li>
+                    <li>Protažení a uklidnění organismu</li>
+                </ul>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://old.judoprodeti.cz/upload/images/treninky/trenink1.jpg" alt="Judo trénink" width="800" height="600">
+            </div>
+            
+            <p>Silové a kondiční tréninky jsou nezbytnou součástí přípravy vážných judistů, kteří chtějí dosáhnout vysoké úrovně. Cvičení jako dřepy, mrtvý tah a přítahy rozvíjejí sílu nezbytnou pro efektivní hody a kontrolu soupeře. Plyometrické cviky jako výskoky na bednu zlepšují explozivní sílu, která je klíčová pro rychlé útoky. Běh a intervalové tréninky budují kardiovaskulární vytrvalost potřebnou pro vysoce intenzivní zápasy. Flexibility a mobility cvičení pomáhají předcházet zraněním a udržovat plný rozsah pohybu v kloubech. Moderní judisté často pracují s kondičními trenéry a používají vědecké metody k optimalizaci své přípravy.</p>
+        </div>
+        
+        <div class="content">
+            <h2>Tréninkové metody a techniky</h2>
+            
+            <p>Kata je formální demonstrace technik prováděná v přesně stanovené sekvenci s partnerem. Kata slouží k uchování tradičních technik, které nemusí být vhodné pro moderní soutěžní judo, ale mají historický a vzdělávací význam. Procvičování kata zlepšuje porozumění principům juda, načasování, rovnováhu a koordinaci s partnerem. Existuje několik různých kata, každá zaměřená na jiný aspekt juda - od hodů přes přízemní techniky až po sebeobranu. Kata je také součástí zkoušek na vyšší pásy a černý pás, kde judisté musí prokázat znalost těchto forem.</p>
+            
+            <p>Yakusoku-geiko je předem domluvený trénink, kde oba partneři vědí, jaké techniky budou použity, a zaměřují se na jejich perfektní provedení. Tento typ tréninku je vhodný pro začátečníky nebo při učení nových technik, protože eliminuje prvek překvapení a umožňuje soustředění na techniku. Naopak kakari-geiko je intenzivní trénink, kde jeden judista útočí kontinuálně na druhého, který pouze brání a vyhýbá se. Tento druh cvičení rozvíjí vytrvalost, agresivitu v útoku a schopnost udržet tempo vysoké intenzity. Různé tréninkové metody se kombinují, aby vytvořily vyváženou přípravu pokrývající všechny aspekty juda.</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JUwz998ZFmo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>Mentální příprava je často opomíjený, ale kriticky důležitý aspekt judistického tréninku. Vizualizace technik a zápasů pomáhá judistům připravit se na různé scénáře a zlepšit své provedení. Meditace a dechová cvičení učí soustředění a klid pod tlakem, což je nezbytné během soutěží. Stanovování cílů a sledování pokroku motivuje judisty k tvrdé práci a disciplinovanému přístupu. Psychologická odolnost se buduje překonáváním výzev v tréninku a učením se z porážek. Nejúspěšnější judisté kombinují fyzický trénink s mentální přípravou a vytvářejí komplexní program vedoucí k mistrovství.</p>
+            
+            <p>Regenerace a odpočinek jsou stejně důležité jako samotný trénink pro dlouhodobý pokrok a prevenci zranění. Správná výživa poskytuje tělu palivo pro náročné tréninky a pomáhá v obnově svalů. Dostatečný spánek je kritický pro fyzickou i mentální regeneraci. Aktivní odpočinek jako plavání nebo jóga pomáhá udržovat flexibilitu a podporuje zotavení bez nadměrného zatížení. Judisté musí naslouchat svému tělu a respektovat signály únavy nebo možného zranění. Vyvážený přístup k tréninku, který zahrnuje intenzivní práci i adekvátní odpočinek, vede k nejlepším výsledkům a dlouhé zdravé kariéře.</p>
+        </div>
+    </div>
+</body>
+</html>

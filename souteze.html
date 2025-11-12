@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judo - Soutěže</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background-color: #2a5298;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #1e3c72;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem 3rem 2rem;
+        }
+        .content {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 0.5rem;
+        }
+        .content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .video-container iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        ul.content-list {
+            margin: 1rem 0 1rem 2rem;
+        }
+        ul.content-list li {
+            margin-bottom: 0.5rem;
+        }
+        .rules-box {
+            background-color: #fff9c4;
+            padding: 1.5rem;
+            border-left: 5px solid #ffc107;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+        .competition-box {
+            background-color: #e8f5e9;
+            padding: 1.5rem;
+            border-left: 5px solid #4caf50;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soutěže v judu</h1>
+        <p>Pravidla a turnaje</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="historie.html">Historie</a></li>
+            <li><a href="techniky.html">Techniky</a></li>
+            <li><a href="treninky.html">Tréninky</a></li>
+            <li><a href="souteze.html">Soutěže</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Pravidla a bodování</h2>
+            
+            <p>Judistické zápasy probíhají na čtvercové podložce tatami o rozměrech 8x8 metrů nebo 10x10 metrů pro mezinárodní soutěže. Standardní doba zápasu je 4 minuty pro muže a ženy v seniorských kategoriích, zatímco mládežnické kategorie mají kratší čas. Cílem je porazit soupeře hodem na záda pro okamžité vítězství nebo získat více bodů než protivník do konce regulérního času. Pokud je na konci času skóre vyrovnané, následuje prodloužení zvané Golden Score, kde první skórovaný bod rozhodne o vítězi. Zápasy řídí hlavní rozhodčí na tatami podporovaný dvěma rohov rozhodčími, kteří společně hodnotí techniky a přidělují body.</p>
+            
+            <p>Ippon je nejvyšší možné skóre a znamená okamžité vítězství bez ohledu na předchozí stav zápasu. Ippon lze získat perfektním hodem, kdy soupeř dopadne na záda s dostatečnou silou a kontrolou, nebo úspěšným škrcením či páčením, které donutí soupeře vzdát se poklepáním. Držení soupeře na zádech po dobu 20 sekund také přináší ippon a ukončuje zápas. Waza-ari je poloviční bod, který se uděluje za téměř perfektní hod nebo držení trvající 10-20 sekund. Dva waza-ari se rovnají ipponu a končí zápas s okamžitým vítězstvím judisty.</p>
+            
+            <div class="rules-box">
+                <h3>Způsoby bodování</h3>
+                <ul class="content-list">
+                    <li>Ippon - perfektní hod na záda, úspěšné škrcení nebo páčení, 25 sekund držení</li>
+                    <li>Waza-ari - téměř perfektní hod nebo 10-20 sekund držení</li>
+                    <li>Dva waza-ari se rovnají ipponu a ukončují zápas</li>
+                    <li>Yuko a koka byly zrušeny v moderních pravidlech</li>
+                    <li>Penalizace shido mohou vést k diskvalifikaci</li>
+                </ul>
+            </div>
+            
+            <div class="image-container">
+                <img src="https://i3.cn.cz/15/1627639174_P2021073008117.jpg" alt="Olympijské judo" width="800" height="500">
+            </div>
+            
+            <p>Penalizace zvané shido se udělují za různé porušení pravidel jako jsou vyhýbání se boji, pasivita, zakázané úchopy nebo útok mimo oblast tatami. První tři shido jsou varování, ale čtvrté shido vede k diskvalifikaci a prohře zápasu. Judisté musí aktivně útočit a hledat příležitosti k hodům nebo přechodům na zem, jinak riskují penalizaci za pasivitu. Zakázané techniky zahrnují útoky na klouby kromě lokte, úmyslné přímé údery a nebezpečné chování ohrožující zdraví soupeře. Rozhodčí také kontrolují, zda judisté zůstávají v vymezené oblasti a penalizují dlouhodobý pobyt mimo aktivní zónu tatami.</p>
+        </div>
+        
+        <div class="content">
+            <h2>Významné turnaje a soutěže</h2>
+            
+            <p>Olympijské hry představují vrchol judistické kariéry a získání olympijské medaile je snem každého vrcholového judisty. Judo bylo poprvé zařazeno do olympijského programu v roce 1964 v Tokiu a od té doby je stálou součástí her. Soutěž se koná v sedmi hmotnostních kategoriích pro muže a sedmi pro ženy, od nejlehčích do 60 kg až po těžké váhy nad 100 kg. Každá země může nominovat maximálně jednoho zástupce v každé kategorii, což činí kvalifikaci extrémně konkurenční. Olympijské zlato je považováno za nejprestižnější titul v judu a vítězové se stávají národními hrdiny a legendami tohoto sportu.</p>
+            
+            <p>Mistrovství světa v judu je druhý nejdůležitější turnaj organizovaný Mezinárodní judistickou federací každý rok nebo každé dva roky. Tento šampionát shromažďuje nejlepší judisty z celého světa a nabízí intenzivní konkurenci ve všech hmotnostních kategoriích. Vítězství na mistrovství světa přináší nejen prestižní titul ale také důležité body do světového žebříčku, které ovlivňují olympijskou kvalifikaci. Kromě individuálních soutěží se koná také soutěž smíšených družstev, kde národní týmy bojují proti sobě v různých hmotnostních kategoriích. Světové šampionáty jsou sledovány miliony fanoušků po celém světě a představují největší svátek juda mimo olympiádu.</p>
+            
+            <div class="competition-box">
+                <h3>Hlavní judistické turnaje</h3>
+                <ul class="content-list">
+                    <li>Olympijské hry - koná se každé čtyři roky, nejvyšší prestiž</li>
+                    <li>Mistrovství světa - každoročně nebo každé dva roky</li>
+                    <li>Grand Slam turnaje - série prestižních mezinárodních soutěží</li>
+                    <li>Grand Prix - turnaje s vysokými bodovými zisky do žebříčku</li>
+                    <li>Kontinentální mistrovství - evropské, asijské, panamerické atd.</li>
+                    <li>Národní mistrovství - určují šampiony jednotlivých zemí</li>
+                </ul>
+            </div>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mtY-iuVbRzI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>Grand Slam a Grand Prix turnaje tvoří světový okruh profesionálního juda, kde se nejlepší judisté setkávají několikrát ročně. Tyto turnaje se konají v různých městech po celém světě jako Paříž, Tokio, Moskva, Brasília a další. Umístění na těchto turnajiích přináší důležité body do světového žebříčku, které určují nasazení na olympiádě a mistrovství světa. Prize money a sponzorské smlouvy dělají z úspěšných judistů profesionální sportovce, kteří se mohou plně věnovat svému tréninku. Atmosféra na Grand Slam turnajích je elektrická s tisíci fanoušků povzbuzujícími své favority a vytvářejícími nezapomenutelné sportovní zážitky.</p>
+            
+            <p>Kontinentální mistrovství jako evropské nebo asijské šampionáty jsou důležitá kvalifikační soutěž pro globální turnaje. Národní mistrovství určují domácí šampiony a často slouží jako kvalifikace pro reprezentaci země na mezinárodních soutěžích. Mládežnické turnaje včetně kadetských a juniorských mistrovství světa rozvíjejí mladé talenty a připravují je na seniorskou kariéru. Univerzitní a školní soutěže podporují judo mezi studenty a poskytují platformu pro objevování nových hvězd. Různé úrovně soutěží zajišťují, že každý judista bez ohledu na věk nebo zkušenosti může najít odpovídající výzvu a měřit své dovednosti proti ostatním.</p>
+        </div>
+    </div>
+</body>
+</html>
